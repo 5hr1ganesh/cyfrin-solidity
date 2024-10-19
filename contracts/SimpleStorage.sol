@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity  ^0.8;
+pragma solidity  ^0.8.18;
 
 contract SimpleStorage {
     // bool hasFavNumber = true;
@@ -28,7 +28,7 @@ contract SimpleStorage {
     // // or 
     // Person public dog = Person({favouriteNum: 0, name: "shiba"});
 
-    function store(uint256 _favNumber) public {
+    function store(uint256 _favNumber) public virtual {
         myFavNumber = _favNumber;
     }
 
